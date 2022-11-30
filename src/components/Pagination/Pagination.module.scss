@@ -1,0 +1,46 @@
+.navigation {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	font-weight: 600;
+	font-family: inherit;
+	font-size: 16px;
+	margin: 20px 0px 0px 0px;
+
+	:global {
+		.selected {
+			border: 1px solid #FE5F1E;
+			background-color: #FE5F1E;
+			transition: all .15s ease-in-out;
+			box-shadow: 0 0 5px rgba(158, 158, 158, 0.45);
+
+			a {
+				color: #fff;
+			}
+
+		}
+		.disabled {
+			background-color: rgb(0, 0, 0, 0.1);
+			border: 1px solid transparent;
+			transition: all .15s ease-in-out;
+
+			
+			 a {
+				cursor: auto;
+			 }
+		}
+	}
+
+	li {
+		border-radius: 25px;
+		border: 1px solid rgb(0, 0, 0, 0.3);
+		transition: all .15s ease-in-out;
+
+		a {
+			display: inline-block;
+			padding: 10px 20px;
+			outline: 0;
+			cursor: pointer;
+		}
+	}
+}
