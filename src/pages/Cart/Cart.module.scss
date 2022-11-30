@@ -1,0 +1,33 @@
+.root {
+	text-align: center;
+
+	h1 {
+		font-size: 32px;
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-size: 19px;
+		margin-bottom: 20px;
+	}
+
+	button {
+		display: inline-block;
+		font-size: 18px;
+		padding: 10px 25px;
+		color: #fff;
+		background-color: #282828;
+		border-radius: 25px;
+		border: none;
+		cursor: pointer;
+		transition: all .15s ease;
+
+		&:hover {
+			background-color: rgb(25, 25, 25);
+			color: #fff;
+		}
+		&:active {
+			transform: translateY(1px);
+		}
+	}
+}
